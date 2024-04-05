@@ -99,6 +99,14 @@ a {
   color: black;
 }
 
+.hotDeals {
+  margin-top: 50px;
+}
+
+.hot_deals {
+  padding-left: 25px;
+}
+
 /* image slider */
 
 /* Slideshow container */
