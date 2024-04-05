@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce Store</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="image" href="./images/favicon.png" />
+    <script
+      src="https://kit.fontawesome.com/aa83ef5a79.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="discount_Title">Upto 50% OFF on Select Services!</div>
+      <div class="search_Bar">
+        <span
+          ><input
+            type="text"
+            class="input_box"
+            placeholder="Search by Services"
+            id="search"
+            onkeyup="searchBar()"
+            autocomplete="on"
+        /></span>
+        <div onclick="redir()" class="glass">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="services" id="services">
+        <div class="card_container" id="card_container"></div>
+      </div>
+      <div class="hotDeals">
+        <h2 class="hot_deals">Hot Deals</h2>
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="./images/dryClean.png" style="width: 100%" />
+          </div>
+
+          <div class="mySlides fade">
+            <img src="./images/laundry.png" style="width: 100%" />
+          </div>
+
+          <div class="mySlides fade">
+            <img src="./images/productsStore.png" style="width: 100%" />
+          </div>
+          <br />
+
+          <div style="text-align: center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer></footer>
+
+    <script src="./App.js"></script>
+  </body>
+</html>
