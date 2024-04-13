@@ -26,6 +26,28 @@ header {
   color: transparent;
 }
 
+.search_box {
+  width: 44vb;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.result-box > ul {
+  /* border-top: 1px solid #999; */
+  padding: 0px 10px;
+}
+
+.result-box > ul > li {
+  list-style-type: none;
+  border-radius: 3px;
+  padding: 15px 10px;
+  cursor: pointer;
+}
+
+.result-box > ul > li:hover {
+  background-color: #e9f3ff;
+}
+
 .search_Bar {
   display: flex;
   align-items: center;
@@ -35,6 +57,7 @@ header {
 #search {
   height: 35px;
   width: 40vb;
+  background: #fff;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   outline: none;
@@ -97,14 +120,6 @@ main {
 a {
   text-decoration: none;
   color: black;
-}
-
-.hotDeals {
-  margin-top: 50px;
-}
-
-.hot_deals {
-  padding-left: 25px;
 }
 
 /* image slider */

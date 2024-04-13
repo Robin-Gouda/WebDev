@@ -14,19 +14,23 @@
   <body>
     <header>
       <div class="discount_Title">Upto 50% OFF on Select Services!</div>
-      <div class="search_Bar">
-        <span
-          ><input
-            type="text"
-            class="input_box"
-            placeholder="Search by Services"
-            id="search"
-            onkeyup="searchBar()"
-            autocomplete="on"
-        /></span>
-        <div onclick="redir()" class="glass">
-          <i class="fa-solid fa-magnifying-glass"></i>
+      <div class="search_box">
+        <div class="search_Bar">
+          <span
+            ><input
+              type="text"
+              class="input_box"
+              placeholder="Search by Services"
+              id="search"
+              onkeydown="searchBar()"
+              onkeyup="find()"
+              autocomplete="off"
+          /></span>
+          <div onclick="redir()" class="glass">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
         </div>
+        <div class="result-box"></div>
       </div>
     </header>
 

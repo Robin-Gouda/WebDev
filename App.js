@@ -39,6 +39,13 @@ const services_offered = [
   },
 ];
 
+let service_off = [];
+
+for (let i = 0; i < services_offered.length; i++) {
+  service_off = [...service_off, services_offered[i].name];
+}
+// console.log(service_off);
+
 services_offered.map((service) => {
   // create and append card
   let div = document.createElement("div");
@@ -60,9 +67,19 @@ services_offered.map((service) => {
   div.appendChild(title);
 });
 
-var searchItem = "a";
-
 //  search functionality
+const find = () => {
+  let input = document.getElementById("search").value;
+  let result = [];
+  if (input.length > 0) {
+    result = service_off.filter((e) => {
+      return e.toLowerCase().includes(input);
+    });
+    redir(result);
+  } else {
+    redir(result);
+  }
+};
 
 const searchBar = () => {
   let input = document.getElementById("search").value;
@@ -76,10 +93,15 @@ const searchBar = () => {
   });
 };
 
-const redir = () => {
-  window.location.href = searchItem;
-  document.getElementById("search").value = "";
-};
+const resultsBox = document.querySelector(".result-box");
+
+function redir(result) {
+  const content = result.map((list) => {
+    return "<li>" + list + "</li>";
+  });
+  resultsBox.innerHTML = "<ul>" + content.join("") + "</ul>";
+}
+
 // immage carousel
 
 let slideIndex = 0;
